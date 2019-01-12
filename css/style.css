@@ -1,0 +1,15 @@
+* {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+body {
+    font-size: 1.1rem;
+}
+
+p {
+    font-weight: normal;
+}
+
+footer ul li .fab {
+    font-size: 1.2rem;
+}
