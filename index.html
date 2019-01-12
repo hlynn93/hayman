@@ -28,11 +28,7 @@
     <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
         <div class="container">
             <div class="dropdown button-dropdown">
-                <a href="#pablo" class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
-                    <span class="button-bar"></span>
-                    <span class="button-bar"></span>
-                    <span class="button-bar"></span>
-                </a>
+                <img class="nav-logo" src="/assets/images/logo_no_text.png">
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-header">Dropdown header</a>
                     <a class="dropdown-item" href="#">Action</a>
@@ -75,56 +71,62 @@
     </nav>
     <!-- End Navbar -->
 
-    <div class="wrapper">
+    <section class="wrapper">
         <div class="page-header page-header-small">
-            <div class="page-header-image" data-parallax="true" style="background-image: url('./assets/images/bg6.jpg');">
+            <div class="page-header-image relative" data-parallax="true" style="background-image: url('./assets/images/background/backdrop_singapore.jpg');">
+                <div class="overlay"></div>
             </div>
             <div class="content-center">
                 <div class="container">
-                    <h1 class="title">This is our great company.</h1>
-                    <div class="text-center">
-                        <a href="#pablo" class="btn btn-primary btn-icon btn-round">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                        <a href="#pablo" class="btn btn-primary btn-icon btn-round">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#pablo" class="btn btn-primary btn-icon btn-round">
-                            <i class="fab fa-google-plus"></i>
-                        </a>
-                    </div>
+                    <h5 class="no-margin bold">HAYMAN CAPITAL</h5>
+                    <h1 class="title no-margin">EFFECTIVE INVESTMENTS</h1>
+                    <p>Prime investments in financial services across a rapidly growing Southeast Asia region.</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section class="section">
+        <div class="container about-us d-flex flex-row justify-content-between">
+            <img class="d-flex logo--content" src="/assets/images/logo.png" />
+            <div class="about-us__content">
+                <h1 class="title">About Us</h1>
+                <p>Hayman Capital Pte. Ltd is an investment and management company, registered and based in Singapore, with specific investments focus on and extensive country expertise in Myanmar, Vietnam and Indonesia.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section vision-mission">
+        <img class="backdrop opaque img-fluid about-us__backdrop" src="/assets/images/background/backdrop_logo.png">
+        <div class="container">
+            <div class="vm__content">
+                <div class="vision">
+                    <h2 class="title">Vision</h2>
+                    <p>To become a leading investment capital company in South East Asia. </p>
+                </div>
+                <div class="mission">
+                    <h2 class="title">Mission</h2>
+                    <p>To achieve sound financial health with sustainable value addition to all our stakeholders by delivering a world-class service through the blending of state-of-the-art technology and visionary management in partnership with competent and committed staff </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper section core-values text-white bg-cyan">
+        <div class="container">
+            <h1 class="title text-center text-white">Core Values</h1>
+            <div class="flex-row d-sm-flex justify-content-between">
+                <p class="text-center core-values__text">Highest level of ethical standards, professional integrity, corporate governance and regulatory compliance.</p>
+                <p class="text-center core-values__text">Financial Inclusion and Innovation, Women Empowerment and commitments towards Social Responsibility.</p>
+                <p class="text-center core-values__text">Synergistic partnership with our subsidiaries.</p>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer starts -->
     <footer class="footer footer-default">
         <div class="container">
             <nav>
-            <ul>
-                <li class="nav-item">
-                    <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim"
-                        target="_blank">
-                        <i class="fab fa-twitter"></i>
-                        <p class="d-lg-none d-xl-none">Twitter</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim"
-                        target="_blank">
-                        <i class="fab fa-facebook-square"></i>
-                        <p class="d-lg-none d-xl-none">Facebook</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial"
-                        target="_blank">
-                        <i class="fab fa-instagram"></i>
-                        <p class="d-lg-none d-xl-none">Instagram</p>
-                    </a>
-                </li>
-            </ul>
             <p class="copyright">600 North Bridge Road, #23-01 Parkview Square, Singapore 188778</p>
             </nav>
             <div class="copyright" id="copyright">
@@ -132,8 +134,7 @@
             <script>
                 document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
             </script>
-            <a href="https://www.hayman-capital.com" target="_blank">Hayman Capital</a>. Coded by
-            <a href="https://www.hanlynn.me" target="_blank">Han Lynn</a>.
+            <a href="https://www.hayman-capital.com" target="_blank">Hayman Capital</a>.
             </div>
         </div>
     </footer>
