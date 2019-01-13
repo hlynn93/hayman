@@ -66,9 +66,9 @@ footer ul li .fab {
 .backdrop {
     z-index: -1;
     position: absolute;
-    top: 0;
+    top: -500px;
     right: 0;
-    height: 100%;
+    height: 180%;
     width: auto;
 }
 
@@ -121,4 +121,20 @@ footer ul li .fab {
     flex: 1;
     padding: 0 30px;
     text-align: justify;
+}
+
+/* MYANMAR */
+.landing__title--myanmar {
+    padding: 0 40px;
+}
+
+.solution {
+    margin-top: -7px;
+    background-color: rgba(0,0,0,0.05)
+}
+
+@media only screen and (max-width: 600px) {
+    .landing__title {
+        font-size: 2.5rem;
+    }
 }
