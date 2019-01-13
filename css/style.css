@@ -50,6 +50,7 @@ footer ul li .fab {
     color: rgba(0, 0, 0, 0.7)
 }
 
+
 .white-bg {
     background-color: #fff;
 }
@@ -66,10 +67,20 @@ footer ul li .fab {
 .backdrop {
     z-index: -1;
     position: absolute;
-    top: -500px;
+    top: 0;
     right: 0;
-    height: 180%;
+    height: 100%;
     width: auto;
+}
+
+.backdrop--home {
+    top: -600px;
+    height: 340%;
+}
+
+.backdrop--myanmar {
+    top: -500px;
+    height: 200%;
 }
 
 .white-text {
@@ -133,8 +144,27 @@ footer ul li .fab {
     background-color: rgba(0,0,0,0.05)
 }
 
+.solution__item__image {
+    width: 80px;
+    height: 80px;
+}
+
+.card-img-top--icon {
+    padding: 50px 50px 0;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    transition: 100ms ease-in-out;
+}
+
+.stats__text {
+    max-width: 500px;
+}
+
 @media only screen and (max-width: 600px) {
     .landing__title {
         font-size: 2.5rem;
     }
 }
+
