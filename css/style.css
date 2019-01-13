@@ -73,6 +73,10 @@ footer ul li .fab {
     width: auto;
 }
 
+.chart {
+    max-width: 100%;
+}
+
 .backdrop--home {
     top: -600px;
     height: 340%;
@@ -149,6 +153,10 @@ footer ul li .fab {
     height: 80px;
 }
 
+.solution__item {
+    min-width: 160px;
+}
+
 .card-img-top--icon {
     padding: 50px 50px 0;
 }
@@ -165,6 +173,11 @@ footer ul li .fab {
 @media only screen and (max-width: 600px) {
     .landing__title {
         font-size: 2.5rem;
+    }
+
+    .section {
+        padding-right: 20px;
+        padding-left: 20px;
     }
 }
 

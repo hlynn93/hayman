@@ -29,7 +29,7 @@ function loadClientSegmentationChart() {
         options: {
             title: {
                 display: true,
-                fontSize: 32,
+                fontSize: 24,
                 text: 'Client Segmentation by Sector'
             },
             legend: {
@@ -62,7 +62,7 @@ function loadLoanPortfolioChart() {
         options: {
             title: {
                 display: true,
-                fontSize: 32,
+                fontSize: 24,
                 text: 'Loan Portfolio'
             },
             legend: {
