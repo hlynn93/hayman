@@ -79,7 +79,7 @@ footer ul li .fab {
 
 .backdrop--home {
     top: -600px;
-    height: 340%;
+    height: 160%;
 }
 
 .backdrop--myanmar {
@@ -96,6 +96,10 @@ footer ul li .fab {
 .logo--content {
     height: 400px;
     width: auto;
+}
+
+.page-header--main {
+    background-position: top center !important;
 }
 
 .about-us {
@@ -168,6 +172,18 @@ footer ul li .fab {
 
 .stats__text {
     max-width: 500px;
+}
+
+.contact-message {
+    border-radius: 30px !important;
+}
+
+.contact-wrapper {
+    max-width: 600px;
+}
+
+.footer__form {
+    padding: 40px 0;
 }
 
 @media only screen and (max-width: 600px) {

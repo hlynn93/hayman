@@ -1,5 +1,8 @@
 /* Client Segmentation Chart */
 $( document ).ready(function() {
+    if(window.Chart === undefined)
+        return
+
     loadClientSegmentationChart();
     loadLoanPortfolioChart();
 });
@@ -23,7 +26,7 @@ function loadClientSegmentationChart() {
                 'Agriculture',
                 'Trade',
                 'Service',
-                'Others'
+                'Production'
             ]
         },
         options: {
