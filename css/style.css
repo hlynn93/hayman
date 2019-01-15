@@ -28,6 +28,14 @@ footer ul li .fab {
     height: 100%;
 }
 
+.overlay--secondary {
+    background-color: rgba(64, 8, 13, 0.7);
+}
+
+.overlay--tertiary {
+    background-color: rgba(101, 101, 72, 0.7);
+}
+
 .opaque {
     object-fit: cover;
     opacity: 0.1;
@@ -96,14 +104,15 @@ footer ul li .fab {
 .logo--content {
     height: 400px;
     width: auto;
+    object-fit: contain;
 }
-
+/*
 .page-header--main {
     background-position: top center !important;
-}
+} */
 
 .about-us {
-    padding-top: 100px;
+    padding-top: 60px;
 }
 
 .nav-logo {
@@ -116,8 +125,7 @@ footer ul li .fab {
 }
 
 .vm__content {
-    padding: 100px 0;
-    max-width: 500px;
+    padding: 20px 0;
 }
 
 .vision-mission {
@@ -148,7 +156,7 @@ footer ul li .fab {
 }
 
 .solution {
-    margin-top: -7px;
+    margin-top: -6px;
     background-color: rgba(0,0,0,0.05)
 }
 
@@ -184,6 +192,14 @@ footer ul li .fab {
 
 .footer__form {
     padding: 40px 0;
+}
+
+.bg-secondary {
+    background-color: rgba(165, 25, 36) !important;
+}
+
+.bg-tertiary {
+    background-color: rgba(180, 181, 85)
 }
 
 @media only screen and (max-width: 600px) {
