@@ -11,6 +11,7 @@ function loadClientSegmentationChart() {
     var ctx = document.getElementById("clientSegmentation");
     var myChart = new Chart(ctx, {
         type: 'pie',
+        plugins: [ChartDataLabels],
         data: {
             datasets: [{
                 data: [16, 47, 21, 16],
@@ -30,6 +31,12 @@ function loadClientSegmentationChart() {
             ]
         },
         options: {
+            plugins: {
+                datalabels: {
+                    formatter: function(value) { return value + '%' },
+                    color: '#fff'
+                }
+            },
             title: {
                 display: true,
                 fontSize: 24,
@@ -46,6 +53,7 @@ function loadLoanPortfolioChart() {
     var ctx = document.getElementById("loanPortfolio");
     var myChart = new Chart(ctx, {
         type: 'bar',
+        plugins: [ChartDataLabels],
         data: {
             labels: ["Mar-17", "Jun-17", "Sep-17", "Dec-17", "Mar-18", "Jun-18", "Oct-18"],
             datasets: [{
@@ -63,6 +71,11 @@ function loadLoanPortfolioChart() {
             }]
         },
         options: {
+            plugins: {
+                datalabels: {
+                    color: '#fff'
+                }
+            },
             title: {
                 display: true,
                 fontSize: 24,

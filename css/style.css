@@ -198,6 +198,23 @@ footer ul li .fab {
     background-color: rgba(165, 25, 36) !important;
 }
 
+.border--secondary {
+    border-color : rgba(165, 25, 36) !important;
+}
+
+.comp-adv {
+    border-radius: 8px;
+    max-width: 200px;
+    margin: 10px;
+}
+
+.comp-adv:hover {
+    max-width: 200px;
+    margin: 10px;
+    transform: translateY(-8px);
+    transition: 100ms ease-in-out;
+}
+
 .bg-tertiary {
     background-color: rgba(180, 181, 85)
 }
@@ -213,3 +230,15 @@ footer ul li .fab {
     }
 }
 
+/* Override default CSS */
+@media screen and (max-width: 991px) {
+
+    .logo-button.button-dropdown {
+        display: block;
+    }
+
+    .sidebar-collapse .navbar .navbar-translate {
+        width: auto;
+        flex: 1
+    }
+}
