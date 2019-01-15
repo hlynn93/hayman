@@ -50,6 +50,7 @@ footer ul li .fab {
     color: rgba(0, 0, 0, 0.7)
 }
 
+
 .white-bg {
     background-color: #fff;
 }
@@ -72,6 +73,20 @@ footer ul li .fab {
     width: auto;
 }
 
+.chart {
+    max-width: 100%;
+}
+
+.backdrop--home {
+    top: -600px;
+    height: 160%;
+}
+
+.backdrop--myanmar {
+    top: -500px;
+    height: 200%;
+}
+
 .white-text {
     color: rgba(0, 0, 0, 0.7);
 }
@@ -81,6 +96,10 @@ footer ul li .fab {
 .logo--content {
     height: 400px;
     width: auto;
+}
+
+.page-header--main {
+    background-position: top center !important;
 }
 
 .about-us {
@@ -122,3 +141,59 @@ footer ul li .fab {
     padding: 0 30px;
     text-align: justify;
 }
+
+/* MYANMAR */
+.landing__title--myanmar {
+    padding: 0 40px;
+}
+
+.solution {
+    margin-top: -7px;
+    background-color: rgba(0,0,0,0.05)
+}
+
+.solution__item__image {
+    width: 80px;
+    height: 80px;
+}
+
+.solution__item {
+    min-width: 160px;
+}
+
+.card-img-top--icon {
+    padding: 50px 50px 0;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    transition: 100ms ease-in-out;
+}
+
+.stats__text {
+    max-width: 500px;
+}
+
+.contact-message {
+    border-radius: 30px !important;
+}
+
+.contact-wrapper {
+    max-width: 600px;
+}
+
+.footer__form {
+    padding: 40px 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .landing__title {
+        font-size: 2.5rem;
+    }
+
+    .section {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
