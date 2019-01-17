@@ -10,6 +10,11 @@ footer ul li .fab {
     font-size: 1.2rem;
 }
 
+.footer p {
+    font-size: 0.8571em;
+    margin-bottom: 0;
+}
+
 .page-header.page-header-small {
     min-height: 80vh;
 }
@@ -115,9 +120,15 @@ footer ul li .fab {
     padding-top: 60px;
 }
 
+.navbar .navbar-brand {
+    padding: 0;
+    margin: 0;
+}
+
 .nav-logo {
-    height: 30px;
+    height: 40px;
     width: auto;
+    cursor: pointer;
 }
 
 .about-us__content {
@@ -147,7 +158,6 @@ footer ul li .fab {
 .core-values__text {
     flex: 1;
     padding: 0 30px;
-    text-align: justify;
 }
 
 /* MYANMAR */
@@ -219,6 +229,25 @@ footer ul li .fab {
     background-color: rgba(180, 181, 85)
 }
 
+/* Contact Item */
+.contact {
+    position: relative;
+    width: 100%;
+}
+
+.contact-image {
+    min-height: 450px;
+    min-width: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* .contact-content-wrapper {
+    position: absolute;
+    top: 40px;
+    left: 250px;
+} */
+
 @media only screen and (max-width: 600px) {
     .landing__title {
         font-size: 2.5rem;
@@ -227,6 +256,10 @@ footer ul li .fab {
     .section {
         padding-right: 20px;
         padding-left: 20px;
+    }
+
+    .contact {
+        flex-wrap: wrap;
     }
 }
 
