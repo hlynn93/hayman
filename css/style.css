@@ -147,6 +147,10 @@ footer ul li .fab {
     background-color: rgba(6, 118, 137, 0.9);
 }
 
+.bg-white {
+    background-color: white !important;
+}
+
 .flex-1 {
     flex: 1;
 }
@@ -177,6 +181,11 @@ footer ul li .fab {
 
 .solution__item {
     min-width: 160px;
+}
+
+.solution__item__subtext {
+    max-width: 220px;
+    text-align: center;
 }
 
 .card-img-top--icon {
@@ -264,6 +273,14 @@ footer ul li .fab {
 }
 
 /* Override default CSS */
+.navbar .navbar-nav .nav-link:not(.btn) {
+    font-size: 0.812em;
+}
+
+.dropdown-menu .dropdown-item, .bootstrap-select .dropdown-menu.inner li a {
+    font-size: 1em;
+}
+
 @media screen and (max-width: 991px) {
 
     .logo-button.button-dropdown {
