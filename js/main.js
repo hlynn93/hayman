@@ -11,15 +11,15 @@ function loadClientSegmentationChart() {
     var ctx = document.getElementById("clientSegmentation");
     var myChart = new Chart(ctx, {
         type: 'pie',
+        plugins: [ChartDataLabels],
         data: {
             datasets: [{
                 data: [16, 47, 21, 16],
                 backgroundColor: [
-                    '#00a8b5',
-                    '#774898',
-                    '#e62a76',
-                    '#fbb901',
-                    'rgba(153, 102, 255, 1)',
+                    '#e57373',
+                    '#b71c1c',
+                    '#f44336',
+                    '#e57373',
                 ],
             }],
             labels: [
@@ -30,6 +30,12 @@ function loadClientSegmentationChart() {
             ]
         },
         options: {
+            plugins: {
+                datalabels: {
+                    formatter: function(value) { return value + '%' },
+                    color: '#fff'
+                }
+            },
             title: {
                 display: true,
                 fontSize: 24,
@@ -46,23 +52,29 @@ function loadLoanPortfolioChart() {
     var ctx = document.getElementById("loanPortfolio");
     var myChart = new Chart(ctx, {
         type: 'bar',
+        plugins: [ChartDataLabels],
         data: {
             labels: ["Mar-17", "Jun-17", "Sep-17", "Dec-17", "Mar-18", "Jun-18", "Oct-18"],
             datasets: [{
                 label: "US$ '000",
-                data: [3897, 4830, 5730, 6195, 6783, 7077, 8820],
+                data: [3897, 4830, 5730, 6195, 6783, 7077, 10751],
                 backgroundColor: [
-                    '#067689',
-                    '#067689',
-                    '#067689',
-                    '#067689',
-                    '#067689',
-                    '#067689',
-                    '#067689'
+                    'rgba(165, 25, 36)',
+                    'rgba(165, 25, 36)',
+                    'rgba(165, 25, 36)',
+                    'rgba(165, 25, 36)',
+                    'rgba(165, 25, 36)',
+                    'rgba(165, 25, 36)',
+                    'rgba(165, 25, 36)'
                 ]
             }]
         },
         options: {
+            plugins: {
+                datalabels: {
+                    color: '#fff'
+                }
+            },
             title: {
                 display: true,
                 fontSize: 24,
