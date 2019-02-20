@@ -254,13 +254,23 @@ footer ul li .fab {
     width: 100%;
 }
 
+.bg-cyan-half {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: -1;
+    background-color: #D1E2E6;
+}
+
+
 .contact-image {
     min-height: 450px;
     min-width: 300px;
     width: 100%;
     object-fit: cover;
 }
-
 
 @media only screen and (max-width: 600px) {
     .landing__title {
@@ -278,6 +288,10 @@ footer ul li .fab {
 
     .contact {
         flex-wrap: wrap;
+    }
+
+    .bg-cyan-half {
+        width: 100%;
     }
 }
 
