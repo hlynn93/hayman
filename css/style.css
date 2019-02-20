@@ -126,7 +126,7 @@ footer ul li .fab {
 }
 
 .nav-logo {
-    height: 40px;
+    height: 72px;
     width: auto;
     cursor: pointer;
 }
@@ -144,12 +144,18 @@ footer ul li .fab {
 }
 
 .bg-cyan {
-    background-color: rgba(6, 118, 137, 0.9);
+    background-color: #3A8F99;
+}
+
+.bg-lightcyan {
+    background-color: #EAF4F6;
 }
 
 .bg-white {
     background-color: white !important;
 }
+
+
 
 .flex-1 {
     flex: 1;
@@ -213,6 +219,10 @@ footer ul li .fab {
     padding: 40px 0;
 }
 
+.bg-dark {
+    background-color: #2E2D2D;
+}
+
 .bg-secondary {
     background-color: rgba(165, 25, 36) !important;
 }
@@ -251,15 +261,14 @@ footer ul li .fab {
     object-fit: cover;
 }
 
-/* .contact-content-wrapper {
-    position: absolute;
-    top: 40px;
-    left: 250px;
-} */
 
 @media only screen and (max-width: 600px) {
     .landing__title {
         font-size: 2.5rem;
+    }
+
+    .landing {
+        margin-top: 80px;
     }
 
     .section {
@@ -270,6 +279,49 @@ footer ul li .fab {
     .contact {
         flex-wrap: wrap;
     }
+}
+
+/* NEW CSS */
+
+.landing-container {
+    height: 500px !important;
+    background-color: rgba(42, 160, 202, 0.39);
+}
+
+.landing-container__home {
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+}
+
+.text-darkblue {
+    color: #00305B;
+}
+
+.text-blue {
+    color: #377DBD;
+}
+
+.text-underline {
+    border-bottom: 1px solid #377DBD;
+}
+
+.max-content {
+    width: max-content;
+}
+
+.team-side {
+    min-width: 250px;
+}
+
+.team-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.img-placeholder {
+    border: 3px solid gray;
 }
 
 /* Override default CSS */
@@ -292,3 +344,4 @@ footer ul li .fab {
         flex: 1
     }
 }
+
