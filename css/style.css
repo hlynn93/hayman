@@ -67,11 +67,6 @@ ul {
     color: rgba(0, 0, 0, 0.7)
 }
 
-
-.white-bg {
-    background-color: #fff;
-}
-
 .page-header-image {
     position: absolute;
     top: 0;
@@ -94,20 +89,6 @@ ul {
     max-width: 100%;
 }
 
-.backdrop--home {
-    top: -600px;
-    height: 160%;
-}
-
-.backdrop--myanmar {
-    top: -500px;
-    height: 200%;
-}
-
-.white-text {
-    color: rgba(0, 0, 0, 0.7);
-}
-
 /** SPECIFIC CSS */
 
 .logo--content {
@@ -115,10 +96,26 @@ ul {
     width: auto;
     object-fit: contain;
 }
-/*
+
 .page-header--main {
-    background-position: top center !important;
-} */
+    background: url("../assets/images/background/singapore3.jpg") no-repeat;
+    background-size: contain;
+}
+
+.page-header--myanmar {
+    background: url("../assets/images/background/bagan.jpg") no-repeat;
+    background-size: contain;
+}
+
+.page-header--indonesia {
+    background: url("../assets/images/background/background_indonesia.jpg") no-repeat;
+    background-size: contain;
+}
+
+.page-header--vietnam {
+    background: url("../assets/images/background/background_vietnam.jpg") no-repeat;
+    background-size: contain;
+}
 
 .about-us {
     padding-top: 60px;
@@ -135,20 +132,17 @@ ul {
     cursor: pointer;
 }
 
-.about-us__content {
-    max-width: 400px;
-}
-
-.vm__content {
-    padding: 20px 0;
-}
-
-.vision-mission {
-    padding-top: 0;
-}
-
+/* Background Colors */
 .bg-cyan {
     background-color: #3A8F99;
+}
+
+.bg-cyan-trans {
+    background-color: rgba(65, 183, 196, 0.4);
+}
+
+.bg-darkcyan {
+    background-color: rgba(58, 143, 153, 0.85)
 }
 
 .bg-lightcyan {
@@ -159,68 +153,16 @@ ul {
     background-color: white !important;
 }
 
+.bg-black {
+    background-color: black;
+}
 
+.bg-lightyellow {
+    background-color: #EEF6E5;
+}
 
 .flex-1 {
     flex: 1;
-}
-
-.core-values {
-    padding: 100px 0;
-}
-
-.core-values__text {
-    flex: 1;
-    padding: 0 30px;
-}
-
-/* MYANMAR */
-.landing__title--myanmar {
-    padding: 0 40px;
-}
-
-.solution {
-    margin-top: -6px;
-    background-color: rgba(0,0,0,0.05)
-}
-
-.solution__item__image {
-    width: 80px;
-    height: 80px;
-}
-
-.solution__item {
-    min-width: 160px;
-}
-
-.solution__item__subtext {
-    max-width: 220px;
-    text-align: center;
-}
-
-.card-img-top--icon {
-    padding: 50px 50px 0;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-    transition: 100ms ease-in-out;
-}
-
-.stats__text {
-    max-width: 500px;
-}
-
-.contact-message {
-    border-radius: 30px !important;
-}
-
-.contact-wrapper {
-    max-width: 600px;
-}
-
-.footer__form {
-    padding: 40px 0;
 }
 
 .bg-dark {
@@ -235,27 +177,8 @@ ul {
     border-color : rgba(165, 25, 36) !important;
 }
 
-.comp-adv {
-    border-radius: 8px;
-    max-width: 200px;
-    margin: 10px;
-}
-
-.comp-adv:hover {
-    max-width: 200px;
-    margin: 10px;
-    transform: translateY(-8px);
-    transition: 100ms ease-in-out;
-}
-
 .bg-tertiary {
     background-color: rgba(180, 181, 85)
-}
-
-/* Contact Item */
-.contact {
-    position: relative;
-    width: 100%;
 }
 
 .bg-half {
@@ -265,11 +188,22 @@ ul {
     bottom: 0;
     width: 50%;
     z-index: -1;
-    background-color: #D1E2E6;
+}
+
+.z-0 {
+    z-index: 0;
+}
+
+.z-1 {
+    z-index: 1;
 }
 
 .bg-cyan {
     background-color: #D1E2E6
+}
+
+.bg-yellow-trans {
+    background-color: rgba(220, 230, 207, 0.71)
 }
 
 .bg-gray {
@@ -280,59 +214,13 @@ ul {
     background-color: transparent;
 }
 
-.contact-image {
-    min-height: 450px;
-    min-width: 300px;
-    width: 100%;
-    object-fit: cover;
-}
-
-@media only screen and (max-width: 600px) {
-    .landing__title {
-        font-size: 2.5rem;
-    }
-
-    .landing {
-        margin-top: 80px;
-    }
-
-    .section {
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-
-    .contact {
-        flex-wrap: wrap;
-    }
-
-    .bg-half {
-        visibility: hidden;
-    }
-
-    .bg-mobile {
-        background-color: initial;
-    }
-}
-
-/* NEW CSS */
-
-.landing-container {
-    height: 500px !important;
-    background-color: rgba(42, 160, 202, 0.39);
-}
-
-.landing-container--red {
-    background-color: rgba(139, 0, 0, 0.47);
-}
-
-.landing-container__home {
-    max-width: 400px;
-    width: 100%;
-    text-align: left;
-}
-
+/* Text colors */
 .text-darkblue {
     color: #00305B;
+}
+
+.text-black {
+    color: black;
 }
 
 .text-blue {
@@ -345,6 +233,65 @@ ul {
 
 .text-underline {
     border-bottom: 1px solid #377DBD;
+}
+
+/* MYANMAR */
+
+.stats__text {
+    max-width: 500px;
+}
+
+.contact-message {
+    border-radius: 8px !important;
+    background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+input.form-control {
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.contact-wrapper {
+    max-width: 600px;
+}
+
+.footer__form {
+    padding: 40px 0;
+}
+
+/* Contact Item */
+.contact {
+    position: relative;
+    width: 100%;
+}
+
+.contact-image {
+    min-height: 450px;
+    min-width: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* NEW CSS */
+
+.landing-container {
+    margin-top: 72px;
+    height: 500px !important;
+    background-color: rgba(42, 160, 202, 0.39);
+}
+
+.landing-container--red {
+    background-color: rgba(139, 0, 0, 0.47);
+}
+
+.landing-container--green {
+    background-color: rgba(93, 143, 24, 0.51);
+}
+
+.landing-container__home {
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
 }
 
 .max-content {
@@ -386,16 +333,21 @@ ul {
 }
 
 .bg-overlay {
-    background-color: rgba(47, 71, 12, 0.7)
+    background-color: rgba(47, 71, 12, 0.7);
+}
+
+.bg-overlay--light {
+    background-color: rgba(220, 230, 207, 0.7);
 }
 
 .full-backdrop {
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
+    height: 100%;
     width: 100%;
     object-fit: cover;
+    z-index: -1;
 }
 
 .bar {
@@ -403,14 +355,6 @@ ul {
     margin: auto;
     height: 4px;
     border-radius: 2px;
-}
-
-.bg-white {
-    background-color: white;
-}
-
-.bg-black {
-    background-color: black;
 }
 
 .carousel-control {
@@ -441,8 +385,30 @@ ul {
 
 .img-partner {
     min-width: 300px;
-    min-height: 100px;
+    height: 100px;
     width: 100%;
+    object-fit: contain;
+}
+
+.google-map {
+    height: 300px;
+}
+
+.contact-side__image {
+    width: 225px;
+    height: 80px;
+}
+
+.contact-section {
+    background: url("../assets/images/background/backdrop_contact.jpg") no-repeat fixed center;
+}
+
+.core-value-section {
+    background: linear-gradient(
+            rgba(58, 143, 153, 0.85),
+            rgba(58, 143, 153, 0.85)
+        ),
+        url("../assets/images/background/singapore3.jpg") no-repeat fixed center;
 }
 
 /* Override default CSS */
@@ -456,6 +422,37 @@ ul {
 
 .dropdown-menu .dropdown-item, .bootstrap-select .dropdown-menu.inner li a {
     font-size: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+    .landing__title {
+        font-size: 2.5rem;
+    }
+
+    .page-header.page-header-small {
+        min-height: 80vh;
+    }
+
+    .landing {
+        margin-top: 80px;
+    }
+
+    .section {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .contact {
+        flex-wrap: wrap;
+    }
+
+    .bg-half {
+        width: 100%;
+    }
+
+    .bg-mobile {
+        background-color: initial;
+    }
 }
 
 @media screen and (max-width: 991px) {
