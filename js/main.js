@@ -36,11 +36,6 @@ function loadClientSegmentationChart() {
                     color: '#fff'
                 }
             },
-            title: {
-                display: true,
-                fontSize: 24,
-                text: 'Client Segmentation by Sector'
-            },
             legend: {
                 position: 'bottom'
             }

@@ -10,6 +10,10 @@ footer ul li .fab {
     font-size: 1.2rem;
 }
 
+ul {
+    text-align: left;
+}
+
 .footer p {
     font-size: 0.8571em;
     margin-bottom: 0;
@@ -107,7 +111,7 @@ footer ul li .fab {
 /** SPECIFIC CSS */
 
 .logo--content {
-    height: 400px;
+    height: 280px;
     width: auto;
     object-fit: contain;
 }
@@ -254,7 +258,7 @@ footer ul li .fab {
     width: 100%;
 }
 
-.bg-cyan-half {
+.bg-half {
     position: absolute;
     left: 0;
     top: 0;
@@ -264,6 +268,17 @@ footer ul li .fab {
     background-color: #D1E2E6;
 }
 
+.bg-cyan {
+    background-color: #D1E2E6
+}
+
+.bg-gray {
+    background-color: #EEEFEE;
+}
+
+.bg-mobile {
+    background-color: transparent;
+}
 
 .contact-image {
     min-height: 450px;
@@ -290,8 +305,12 @@ footer ul li .fab {
         flex-wrap: wrap;
     }
 
-    .bg-cyan-half {
-        width: 100%;
+    .bg-half {
+        visibility: hidden;
+    }
+
+    .bg-mobile {
+        background-color: initial;
     }
 }
 
@@ -300,6 +319,10 @@ footer ul li .fab {
 .landing-container {
     height: 500px !important;
     background-color: rgba(42, 160, 202, 0.39);
+}
+
+.landing-container--red {
+    background-color: rgba(139, 0, 0, 0.47);
 }
 
 .landing-container__home {
@@ -314,6 +337,10 @@ footer ul li .fab {
 
 .text-blue {
     color: #377DBD;
+}
+
+.text-red {
+    color: #D71143;
 }
 
 .text-underline {
@@ -338,9 +365,93 @@ footer ul li .fab {
     border: 3px solid gray;
 }
 
+.list-item {
+    min-width: 250px;
+    width: 100%;
+}
+
+.list-item-l {
+    min-width: 300px;
+    width: 100%;
+}
+
+.list-item-image {
+    width: 90px;
+    height: 90px;
+}
+
+.list-item-image-l {
+    width: 144px;
+    height: 144px;
+}
+
+.bg-overlay {
+    background-color: rgba(47, 71, 12, 0.7)
+}
+
+.full-backdrop {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.bar {
+    width: 36px;
+    margin: auto;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.carousel-control {
+    font-size: 2em;
+    font-weight: bold;
+    color: #D71143;
+}
+
+.carousel-control:hover {
+    color: #9c0b30 !important;
+}
+
+.carousel-indicator {
+    background-color: gray !important;
+}
+
+.carousel-indicator.active {
+    background-color: #D71143 !important;
+}
+
+.carousel-item {
+    min-height: 640px;
+}
+
+.h-list {
+    font-size: 1.1em;
+}
+
+.img-partner {
+    min-width: 300px;
+    min-height: 100px;
+    width: 100%;
+}
+
 /* Override default CSS */
 .navbar .navbar-nav .nav-link:not(.btn) {
     font-size: 0.812em;
+}
+
+.page-header .content-center {
+    max-width: 960px;
 }
 
 .dropdown-menu .dropdown-item, .bootstrap-select .dropdown-menu.inner li a {
