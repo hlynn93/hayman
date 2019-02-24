@@ -92,29 +92,38 @@ ul {
 /** SPECIFIC CSS */
 
 .logo--content {
-    height: 280px;
-    width: auto;
+    height: auto;
+    width: 280px;
     object-fit: contain;
 }
 
+/* .contact-section {
+    background: url("../assets/images/background/backdrop_contact.jpg") no-repeat fixed center;
+    background-size: cover;
+} */
+
+.landing {
+
+}
+
 .page-header--main {
-    background: url("../assets/images/background/singapore3.jpg") no-repeat;
-    background-size: contain;
+    background: url("../assets/images/background/singapore3.jpg") no-repeat center;
+    background-size: cover;
 }
 
 .page-header--myanmar {
-    background: url("../assets/images/background/bagan.jpg") no-repeat;
-    background-size: contain;
+    background: url("../assets/images/background/bagan.jpg") no-repeat fixed center;
+    background-size: cover;
 }
 
 .page-header--indonesia {
-    background: url("../assets/images/background/background_indonesia.jpg") no-repeat;
-    background-size: contain;
+    background: url("../assets/images/background/background_indonesia.jpg") no-repeat fixed center;
+    background-size: cover;
 }
 
 .page-header--vietnam {
-    background: url("../assets/images/background/background_vietnam.jpg") no-repeat;
-    background-size: contain;
+    background: url("../assets/images/background/background_vietnam.jpg") no-repeat fixed center;
+    background-size: cover;
 }
 
 .about-us {
@@ -245,13 +254,10 @@ ul {
     max-width: 500px;
 }
 
-.contact-message {
-    border-radius: 8px !important;
-    background-color: rgba(255, 255, 255, 0.7) !important;
-}
-
+.contact-message,
 input.form-control {
-    border-radius: 8px;
+    border-radius: 8px !important;
+    border: 1px solid lightgray !important;
     background-color: rgba(255, 255, 255, 0.7) !important;
 }
 
@@ -278,9 +284,16 @@ input.form-control {
 
 /* NEW CSS */
 
+.landing {
+    margin-top: 92px;
+}
+
+.landing-content {
+    padding: 50px 20px;
+}
+
 .landing-container {
-    margin-top: 72px;
-    height: 500px !important;
+    height: 640px !important;
     background-color: rgba(42, 160, 202, 0.39);
 }
 
@@ -303,12 +316,13 @@ input.form-control {
 }
 
 .team-side {
+    width: 250px;
     min-width: 250px;
 }
 
 .team-img {
     width: 100%;
-    height: 300px;
+    height: 330px;
     object-fit: cover;
 }
 
@@ -405,6 +419,7 @@ input.form-control {
 
 .contact-section {
     background: url("../assets/images/background/backdrop_contact.jpg") no-repeat fixed center;
+    background-size: cover;
 }
 
 .core-value-section {
@@ -413,6 +428,18 @@ input.form-control {
             rgba(58, 143, 153, 0.85)
         ),
         url("../assets/images/background/singapore3.jpg") no-repeat fixed center;
+}
+
+.mw-300 {
+    min-width: 300px;
+}
+
+.mw-250 {
+    min-width: 250px;
+}
+
+.mw-200 {
+    min-width: 200px;
 }
 
 /* Override default CSS */
